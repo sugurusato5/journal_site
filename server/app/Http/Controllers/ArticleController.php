@@ -45,6 +45,7 @@ class ArticleController extends Controller
         $article = Article::find($id);
         return view('articles.edit', ['article' => $article]);
     }
+    
 
     public function update(Request $request, $id)
     {

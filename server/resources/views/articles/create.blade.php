@@ -15,7 +15,7 @@
         </p>
         <p>
             本文<br>
-            <textarea name="body" id="" cols="20" rows="2"></textarea>
+            <textarea name="body" id="" cols="20" rows="2">{{ old('body')}}</textarea>
         </p>
         <input type="submit" value="投稿">
     </form>

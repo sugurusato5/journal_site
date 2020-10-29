@@ -15,7 +15,7 @@
             <input type="text" name="title" value="{{ $article->title }}">
         </p>
         <p>本文<br>
-            <textarea name="body" id="" cols="20" rows="2"></textarea>
+            <textarea name="body" id="" cols="20" rows="2">{{ $article->body }}</textarea>
         </p>
         <input type="submit" value="更新">
     </form>
