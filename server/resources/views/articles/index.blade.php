@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    </html><h1>論文一覧</h1>
-    @foreach ($articles as $article)
-        <p><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></p>
-    @endforeach
-    <a href="/articles/create"><input type="submit" value="新規論文登録"></a>
-</body>
+    <body>
+        <h1>論文一覧</h1>
+        @foreach ($articles as $article)
+            <p><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></p>
+        @endforeach
+        <button type="type" onclick="location.href='/articles/create'">新規論文投稿</button>
+    </body>
+</html>
